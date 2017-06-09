@@ -2,6 +2,7 @@ import * as types from '../zhihu-types.js'
 import axios from 'axios'
 var moment = require('moment');
 
+//单一状态树？
 const state = {
     NewsListRoot: [],
     NewsLatest: {},
@@ -13,8 +14,10 @@ const state = {
     ThemesList: {}
 }
 
+
+// getters接收state作为其第一个参数
 const getters = {
-    [types.DONE_NEWS_LIST_ROOT]: state => {
+    [types.DONE_NEWS_LIST_ROOT]: state => { //
         return state.NewsListRoot
     },
     [types.DONE_NEWS_LATEST]: state => {
@@ -37,7 +40,10 @@ const getters = {
     }
 }
 
+// 更改vuex store中的状态的唯一方法是提交mutation，vuex中的mutations类似于事件，
+// state 参数， all是载荷
 const mutations = {
+	// 对象风格提交方式
     [types.TOGGLE_NEWS_LATEST](state, all) {
         state.NewsListRoot.push(all)
         state.NewsLatest = all
