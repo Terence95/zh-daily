@@ -1,6 +1,6 @@
 <template>
 <div>
-	<ZhihuHead></ZhihuHead>
+	<!--<ZhihuHead></ZhihuHead>-->
 	<div class="root-style">
 		<router-view></router-view>
 	</div>
@@ -8,13 +8,13 @@
 </template>
 
 <script>
-import ZhihuHead from './components/ZhihuHead'
+//import ZhihuHead from './components/ZhihuHead'
 // 引入basscss
 require('basscss/css/basscss.min.css')
 export default {
 	name: 'root',
 	components: {
-		ZhihuHead
+//		ZhihuHead
 	}
 }
 </script>
@@ -25,9 +25,9 @@ export default {
 	padding: 0;
 }
 
-html {
+/*html {
 	font-size: 20px;
-}
+}*/
 
 @media screen and (min-width: 640px) {
 	html {
