@@ -1,6 +1,6 @@
-<!--default vue-->
+<!--ZhihuHead vue-->
 <template>
-	<div class="wrapper">
+	<div class="wrapper m1">
 		default page
 	</div>
 </template>
@@ -30,20 +30,5 @@
 <style scoped>
 	body {
 		text-align: center;
-	}
-
-	.wrapper {
-		position: relative;
-		text-align: center;
-		margin: 100px 100px;
-	}
-
-	.wrapper h1 {
-		padding: 20px;
-		color: #000000;
-	}
-
-	header {
-		background: white;
 	}
 </style>
