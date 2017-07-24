@@ -1,16 +1,16 @@
-<!--ZhihuHead vue-->
+<!--ZhihuHeadFix vue-->
 <template>
 	<div class="wrapper m1">
-		知乎head
+		知乎headFix
 	</div>
 </template>
 
 <script>
 	export default {
-		name: 'ZhihuHead',
+		name: 'ZhihuHeadFix',
 		data() {
 			return {
-				
+
 			}
 		},
 		created: function() {
